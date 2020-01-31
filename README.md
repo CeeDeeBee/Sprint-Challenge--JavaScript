@@ -43,7 +43,7 @@ Edit this document to include your answers after each question. Make sure to lea
 4. Describe the four rules of the 'this' keyword.
 
     1. Global Binding. When "this" is used in the global scope it will refer to the window object. If "use strict" is enabled it will be undefined.
-    2. Inplicit Binding. This occurs when an objects method is called and uses "this". Here "this" refers to the object on which the method was called.
+    2. Implicit Binding. This occurs when an objects method is called and uses "this". Here "this" refers to the object on which the method was called.
     3. New Binding. A binding of "this" which is created when using the "new" keyword to instantiate a class. Here "this" refers to the object that has been created by invoking the constructor function.
     4. Explicit Binding. Occurs when .call, .apply, or .bind is called. Here "this" refers to the object that is passed into the method.
 
@@ -59,14 +59,14 @@ Follow these steps to set up and work on your project:
 - [x] Add TL as collaborator on Github.
 - [x] Clone your OWN version of Repo (Not Lambda's by mistake!).
 - [x] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
-- [ ] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
-- [ ] You are now ready to build this project with your preferred IDE
-- [ ] Implement the project on your Branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
+- [x] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
+- [x] You are now ready to build this project with your preferred IDE
+- [x] Implement the project on your Branch, committing changes regularly.
+- [x] Push commits: git push origin `<firstName-lastName>`.
 
 Follow these steps for completing your project:
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo).
+- [x] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo).
 - [ ] Add your team lead as a Reviewer on the Pull-request
 - [ ] TL then will count the HW as done by  merging the branch back into master.
 
