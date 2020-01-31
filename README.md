@@ -30,22 +30,35 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+    .map automatically returns a new array whereas .forEach does not. This means that .forEach tends to be used to mutate an existing array and .map tends to be used to create a new array from an existing one.
+
 2. What is the difference between a function and a method?
+
+    A function is any block of code defined as a function. A method is a function that is defined specifically within an object which typically somehow references that object.
 
 3. What is closure?
 
+    A closure is what is created to allow functions to access variables that exist in their parent scope but not their own. This has the effect of allowing you to access variables in a function without passing them into the function.
+
 4. Describe the four rules of the 'this' keyword.
 
+    1. Global Binding. When "this" is used in the global scope it will refer to the window object. If "use strict" is enabled it will be undefined.
+    2. Inplicit Binding. This occurs when an objects method is called and uses "this". Here "this" refers to the object on which the method was called.
+    3. New Binding. A binding of "this" which is created when using the "new" keyword to instantiate a class. Here "this" refers to the object that has been created by invoking the constructor function.
+    4. Explicit Binding. Occurs when .call, .apply, or .bind is called. Here "this" refers to the object that is passed into the method.
+
 5. Why do we need super() in an extended class?
+
+    The super keyword is needed to apply properties from a parent class onto a child class when using class syntax. It can also be used to call a function on a parent class.
 
 ## Project Set up
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add TL as collaborator on Github.
-- [ ] Clone your OWN version of Repo (Not Lambda's by mistake!).
-- [ ] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
+- [x] Create a forked copy of this project.
+- [x] Add TL as collaborator on Github.
+- [x] Clone your OWN version of Repo (Not Lambda's by mistake!).
+- [x] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
 - [ ] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
 - [ ] You are now ready to build this project with your preferred IDE
 - [ ] Implement the project on your Branch, committing changes regularly.
