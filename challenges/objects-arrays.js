@@ -126,16 +126,17 @@ const graduates = [{
 Once you have the new array created, sort the universities alphabetically and log the result. */
 const universities = graduates.map(obj => obj.university);
 
-universities.sort((a, b) => {
-  if (a < b) {
-    return -1;
-  } else if (a > b) {
-    return 1;
-  }
-  // If equal
-  return 0;
-});
+// universities.sort((a, b) => {
+//   if (a < b) {
+//     return -1;
+//   } else if (a > b) {
+//     return 1;
+//   }
+//   // If equal
+//   return 0;
+// });
 
+universities.sort((a, b) => a < b ? -1 : 1);
 console.log(universities);
 
 /* Request 2: Create a new array called contactInfo that contains both first name and email of each student. This will be an array of strings.

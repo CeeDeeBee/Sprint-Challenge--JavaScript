@@ -38,18 +38,18 @@ Edit this document to include your answers after each question. Make sure to lea
 
 3. What is closure?
 
-    A closure is what is created to allow functions to access variables that exist in their parent scope but not their own. This has the effect of allowing you to access variables in a function without passing them into the function.
+    A closure is what is created to allow functions to access variables that exist in the parent scope but do not exist within the functions scope. This has the effect of allowing you to access variables in a function that don't exist in the function but do exist in the lexical scope in which the function was defined. The closure itself consists of both the function and the lexical environment in which it was defined.
 
 4. Describe the four rules of the 'this' keyword.
 
     1. Global Binding. When "this" is used in the global scope it will refer to the window object. If "use strict" is enabled it will be undefined.
-    2. Implicit Binding. This occurs when an objects method is called and uses "this". Here "this" refers to the object on which the method was called.
-    3. New Binding. A binding of "this" which is created when using the "new" keyword to instantiate a class. Here "this" refers to the object that has been created by invoking the constructor function.
+    2. Implicit Binding. This occurs when an object method uses "this". Here "this" refers to the object on which the method was called.
+    3. New Binding. A binding of "this" which is created when using the "new" keyword to instantiate an object. Here "this" refers to the object that has been created by invoking the constructor function.
     4. Explicit Binding. Occurs when .call, .apply, or .bind is called. Here "this" refers to the object that is passed into the method.
 
 5. Why do we need super() in an extended class?
 
-    The super keyword is needed to apply properties from a parent class onto a child class when using class syntax. It can also be used to call a function on a parent class.
+    The super keyword is needed to apply properties from a parent class onto a child class when using class syntax. This functions by calling the parent constructor. It can also be used to call a function on a parent class.
 
 ## Project Set up
 
